@@ -1,7 +1,9 @@
 void RespondToMessage(char[] charArray) {
 	boolean inMessage = false;
 	boolean upperCase = false;
-	StringBuilder returnMessage = new StringBuilder(">");
+	// The ">" prevents the bot from replying to its own messages
+	// Don't remove it or change the symbol unless you like infinite loops
+	StringBuilder returnMessage = new StringBuilder(">");  
 	for (int i = 0; i < charArray.length; ++i) {
 		if (inMessage) {
 			if (upperCase) {
