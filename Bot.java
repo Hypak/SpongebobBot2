@@ -1,4 +1,4 @@
-void RespondToMessage (char[] charArray) {
+void RespondToMessage(char[] charArray) {
 	boolean inMessage = false;
 	boolean upperCase = false;
 	StringBuilder returnMessage = new StringBuilder(">");
